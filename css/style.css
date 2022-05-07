@@ -272,6 +272,7 @@ body.active {
   }
   .text {
     height: 150px;
+    font-size: 20px;
   }
   .keyboard {
     min-height: 150px;
@@ -290,10 +291,13 @@ body.active {
     gap: 4px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(25px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    -ms-grid-columns: (minmax(20px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
     -ms-grid-rows: (minmax(35px, 1fr))[auto-fit];
         grid-template-rows: repeat(auto-fit, minmax(35px, 1fr));
+  }
+  .keyboard .keyboard__button-shift--left {
+    grid-column: span 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
